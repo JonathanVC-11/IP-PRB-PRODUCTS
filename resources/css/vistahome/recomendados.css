@@ -1,0 +1,232 @@
+.CardContainer-Home-Recomendados {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows: 380px;
+    gap: 10px;
+    padding: 5px;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    background: #FFF;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados:hover:before {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .CardContainer-Home-Recomendados .product-imagen-Home-Recomendados {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .CardContainer-Home-Recomendados .product-imagen-Home-Recomendados img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 250px;
+  }
+  
+  .CardContainer-Home-Recomendados .product-imagen-Home-Recomendados .product-descuento-label-Home-Recomendados {
+    color: #fff;
+    background-color: #722F37;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .social-Home-Recomendados {
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%) translateY(-90%);
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    z-index: 2;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .social-Home-Recomendados li {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(300%);
+    transition: all 0.5s ease 0s;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados:hover .social-Home-Recomendados li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .social-Home-Recomendados li:nth-child(2) {
+    transition-delay: 0.05s;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .social-Home-Recomendados li:nth-child(3) {
+    transition-delay: 0.13s;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .social-Home-Recomendados li:nth-child(4) {
+    transition-delay: 0.16s;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .social-Home-Recomendados li a {
+    color: #000;
+    background-color: #fff;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 0 2px 10px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .social-Home-Recomendados li a:hover {
+    color: #fff;
+    background-color: #722F37;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .product-content-Home-Recomendados {
+    padding: 18px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .title-Home-Recomendados {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    max-height: 2.4em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .precio-Home-Recomendados {
+    color: #722F37;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .precio-Home-Recomendados span {
+    color: #777;
+    margin: 0 0 0 5px;
+    font-weight: 300;
+    text-decoration: line-through;
+    display: inline-block;
+  }
+  
+  .Datos-Home-Recomendados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 30px;
+    gap: 5px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .Datos-Home-Recomendados .Tallas-Home-Recomendados {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .MasMenos-Home-Recomendados {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 5fr;
+    gap: 2px;
+  }
+  
+  .MasMenos-Home-Recomendados button {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    max-height: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .MasMenos-Home-Recomendados button:hover {
+    background: #ddd;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .CardContainer-Home-Recomendados .product-grid-Home-Recomendados {
+      margin-bottom: 0px;
+    }
+  
+    .CardContainer-Home-Recomendados {
+      padding-left: 0;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .title-Home-Recomendados {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .CardContainer-Home-Recomendados {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .Datos-Home-Recomendados {
+      grid-template-columns: 45% 85%;
+      gap: 1px;
+    }
+  
+    .Datos-Home-Recomendados select {
+      font-size: 10px;
+      min-height: 30px;
+    }
+  
+    .MasMenos-Home-Recomendados button {
+      max-width: 20px;
+    }
+  
+    .CardContainer-Home-Recomendados .product-grid-Home-Recomendados .title-Home-Recomendados {
+      font-size: 10px;
+      font-weight: 500;
+    }
+  }

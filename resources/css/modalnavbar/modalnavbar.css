@@ -1,0 +1,112 @@
+/* Fuente minimalista */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🟢 MODAL: Diseño limpio y elegante */
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🟢 CONTENIDO DEL MODAL */
+.custom-modal-content {
+    background-color: #fff;
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* 🟢 BOTÓN DE CIERRE */
+.custom-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+}
+
+.custom-close:hover {
+    color: #800020; /* Color guinda */
+}
+
+/* 🟢 FORMULARIO DE LOGIN Y REGISTRO */
+.login__header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.login__form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 🟢 BOTÓN ESTILO MINIMALISTA */
+.button {
+    background-color: #000;  /* Negro */
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* 🟢 HOVER COLOR GUINDA */
+.button:hover {
+    background-color: #800020; /* Guinda */
+}
+
+/* 🟢 LOGO CENTRADO */
+.modal-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal-logo img {
+    max-width: 100px;
+    height: auto;
+}

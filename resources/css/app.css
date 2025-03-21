@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+@import './vistaprincipal/vistaprincipal.css';
+@import './vistaprincipal/nuevosProductos.css';
+@import './vistahome/home.css';
+@import './vistahome/recomendados.css';
+@import './modalnavbar/modalnavbar.css';
+@import './social.css';
+@import './ropa/ropaCards.css';
+@import './lomascomprado/LomasCompradoCards.css';
+@import './contacto/contacto.css';
+@import './modalCarrito/modalcarrito.css';
+@import './modalCarrito/VistaCarrito.css';
+@import './mapa/mapa.css';
+

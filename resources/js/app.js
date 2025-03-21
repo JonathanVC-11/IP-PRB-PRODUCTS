@@ -1,0 +1,9 @@
+import './bootstrap';
+import './home/carrusel';
+import './home/carruselLoNuevo';
+import './components/modalhome';
+import './components/modaliniciosesion';
+import './home/menuhambuerguesa';
+import './Carrito/modalcarrito';
+import './Carrito/viewCarrito';
+import './components/mapa';

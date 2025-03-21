@@ -1,0 +1,119 @@
+/* Importamos la fuente Poppins para un diseño moderno */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); */
+
+/* Estilos específicos para el modal de inicio de sesión */
+#customLoginModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del modal */
+#customLoginModal .custom-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px; /* Tamaño moderado */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Botón de cerrar */
+#customLoginModal .custom-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Estilos del logo */
+#customLoginModal .modal-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#customLoginModal .modal-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Títulos */
+#customLoginModal .login__header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+#customLoginModal .login__form label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Inputs */
+#customLoginModal .login__form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botón */
+#customLoginModal .button {
+    background-color: #00AEEF;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+#customLoginModal .button:hover {
+    background-color: #008FCC;
+}
+
+/* Enlace de registro */
+#customLoginModal .text-center a {
+    color: #00AEEF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#customLoginModal .text-center a:hover {
+    text-decoration: underline;
+}
